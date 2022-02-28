@@ -4,7 +4,7 @@ LINEAR SEARCH*/
 using namespace std;
 int main()
 {
-    int n,target,flag=0;
+    int n,target,c,flag=0;
     cout<<"enter the limit of array"<<endl;
     cin>>n;
     int a[n];
@@ -18,11 +18,12 @@ int main()
         if(a[i]==target)
         {
             flag=1;
+            c=i;
             break;
         }
     }
     if(flag)
-    cout<<"Target found"<<endl;
+     cout<<"Target is found on index "<<c<<endl;
     else 
     cout<<"Target is not Found"<<endl;
     return 0;
